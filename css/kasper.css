@@ -934,7 +934,22 @@ header nav .form i:hover {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
 }
-
+@media (min-width: 992px) {
+    .pricing .plans {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .pricing .plans .plan {
+        flex-basis: 25%;
+    }
+}
+@media (min-width: 1199px) {
+    .pricing .plans .plan {
+        flex-basis: 20%;
+    }
+}
 .pricing .plans .plan {
     background-color: #fefdfe;
     text-align: center;
